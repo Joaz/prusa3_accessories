@@ -88,13 +88,13 @@ module x_endstop(){
 
 module y_endstop(){
     union(){
-       translate([-18,10,0]) rotate([0,0,-90]) rrd_endstop_base(4);
-        translate([-15,0,0]) cube([18,40,10]);
-        translate([0,15,10]) rotate([180,0,0]) endstop(5.1);
+        translate([-11,-7,0]) rotate([0,0,-90]) rrd_endstop_base(4);
+        #translate([-8,-17,0]) cube([7.5,40,10]);
+        translate([-3.5,15,10]) rotate([180,0,0]) endstop(5.1);
     }
 }
 
-z_endstop();
+y_endstop();
 
 //y_endstop();
 //x_endstop();
